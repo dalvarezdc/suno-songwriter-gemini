@@ -1,6 +1,5 @@
 {
   "name": "suno-songwriter",
   "version": "1.0.0",
-  "description": "A Gemini CLI extension that provides the suno-songwriter skill for enriching AI music prompts.",
-  "contextFileName": "GEMINI.md"
+  "description": "A Gemini CLI extension that provides the suno-songwriter skill for enriching AI music prompts."
 }
