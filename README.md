@@ -1,6 +1,57 @@
-# suno-songwriter-gemini
-Skill for Gemini Client that writes AI music, it is heavily specialized in Suno Prompts, but its good for other music AI tools too
+# Suno Songwriter & Album Concept Designer
 
-## Skills
-- **Suno Songwriter**: Located in `skills/suno-songwriter/SKILL.md`.
-- **Album Concept Designer**: Located in `skills/album-concept-designer/SKILL.md`. Specializes in world-building, narrative arcs, and creating comprehensive "Album Bibles" for conceptual music projects.
+A suite of Gemini CLI skills specialized for AI music creation, heavily optimized for Suno AI prompts.
+
+## Included Skills
+
+### 1. Suno Songwriter
+Specialized in formatting and enriching lyrics with technical Suno AI tags (`[Verse]`, `(ad-libs)`, etc.). It preserves your lyrics while adding proper meta tags and structural elements for high-quality music generation.
+- **Location**: `skills/suno-songwriter/SKILL.md`
+
+### 2. Album Concept Designer
+A creative director for building complex conceptual albums. It handles world-building, storyline, character profiles, and narrative tracklists. It generates an "Album Bible" and track specifications.
+- **Location**: `skills/album-concept-designer/SKILL.md`
+
+## Installation
+
+### Method 1: Install as a Gemini Extension (Recommended)
+Installing the repository as an extension automatically discovers and enables both skills.
+
+```bash
+# Clone the repository
+git clone https://github.com/danielalvarez/suno-songwriter-gemini.git
+cd suno-songwriter-gemini
+
+# Install the extension
+gemini extension add .
+```
+
+### Method 2: Manual Skill Linking (For Development)
+If you want to link the skills individually or are developing them locally, you can use the `link` command:
+
+```bash
+# Link individual skills
+gemini skills link ./skills/suno-songwriter
+gemini skills link ./skills/album-concept-designer
+```
+
+Alternatively, use the slash command within a Gemini CLI session:
+```text
+/skills link ./skills/suno-songwriter
+/skills link ./skills/album-concept-designer
+```
+
+## Usage & Activation
+
+Once installed, the skills are available in any Gemini CLI session. You can activate them using the `activate_skill` tool or by simply requesting them:
+
+- **Explicit Activation**:
+  - `activate_skill(name="suno-songwriter")`
+  - `activate_skill(name="album-concept-designer")`
+
+- **Natural Language**:
+  - "I need help with Suno prompts."
+  - "Let's design a concept album."
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
