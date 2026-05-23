@@ -14,19 +14,30 @@ A creative director for building complex conceptual albums. It handles world-bui
 
 ## Installation
 
-### Method 1: Install as a Gemini Extension (Recommended)
-Installing the repository as an extension automatically discovers and enables both skills.
+### Method 1: Remote Installation (Standard)
+Install the skills directly from the GitHub repository.
+
+```bash
+# Install globally (available in all projects)
+gemini skills install https://github.com/dalvarezdc/suno-songwriter-gemini.git
+
+# OR install only for the current project workspace
+gemini skills install https://github.com/dalvarezdc/suno-songwriter-gemini.git --scope workspace
+```
+
+### Method 2: Local Extension Installation
+If you have cloned the repository locally, you can install it as an extension to automatically discover all bundled skills.
 
 ```bash
 # Clone the repository
-git clone https://github.com/danielalvarez/suno-songwriter-gemini.git
+git clone https://github.com/dalvarezdc/suno-songwriter-gemini.git
 cd suno-songwriter-gemini
 
 # Install the extension
 gemini extension add .
 ```
 
-### Method 2: Manual Skill Linking (For Development)
+### Method 3: Manual Skill Linking (For Development)
 If you want to link the skills individually or are developing them locally, you can use the `link` command:
 
 ```bash
