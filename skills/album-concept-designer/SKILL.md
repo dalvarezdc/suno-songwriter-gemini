@@ -47,12 +47,10 @@ For each track on the tracklist, help the user design a detailed track specifica
 `[Title]`
 
 ### Style
-```
-[Detailed Genre, Exclude, Instruments, and Tags blocks based on the album's identity]
-```
+`[Detailed Genre, Exclude, Instruments, and Tags blocks based on the album's identity]`
 
 ### Raw Lyrics
-[The raw lyrics you generate based on the narrative context]
+`[The raw lyrics you generate based on the narrative context]`
 ```
 
 ## Important Instructions
